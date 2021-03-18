@@ -29,7 +29,5 @@ for i in vals_1[1:]:
             lst[2] += (v[3] / 100) * i[1]
             lst[3] += (v[4] / 100) * i[1]
 
-            # lst.append((math.floor((v[1] / 100) * i[1]), math.floor((v[2] / 100) * i[1]),
-            #            math.floor((v[3] / 100) * i[1]), math.floor((v[4] / 100) * i[1])))
 for i in lst:
     print(math.floor(i))
