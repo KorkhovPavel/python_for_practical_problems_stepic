@@ -13,9 +13,7 @@ counter = 0
 for v in ['way', 'node']:
     soup = BeautifulSoup(xml, 'lxml').find_all(f'{v}')
     s = BeautifulSoup(str(soup), 'lxml').find_all('tag', k='amenity', v='fuel')
-
     for i in s:
-        # print(counter, i)
         counter += 1
 
 print(counter)
